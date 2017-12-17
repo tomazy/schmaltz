@@ -24,6 +24,9 @@ XXYYZZ  my-key                  5a:28:6f:.....
 # export my ssh-key id
 $ export SSH_KEY_ID=XXYYZZ
 
+# use the correct key
+$ ssh-add ~/.ssh/my-key
+
 # download a torrent
 $ ./get-torrent.sh "magnet:?xt=urn......." && say 'Download completed!'
 ```

@@ -7,10 +7,10 @@ DROPLET_NAME=tworker
 
 ./droplet-create.sh $DROPLET_NAME
 ./droplet-wait.sh $DROPLET_NAME
-./droplet-ip.sh > ./ip
+./droplet-ip.sh $DROPLET_NAME > ./ip
 
 ./ts-install.sh
-./ts-add.sh $TORRENT
+./ts-add.sh "$TORRENT"
 
 ./ts-wait.sh
 
